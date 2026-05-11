@@ -134,7 +134,7 @@ StockWatch integrates with public stock price APIs (e.g., Yahoo Finance via Rapi
 
 ## License
 
-This project is private and proprietary.
+This project is currently undergoing development.
 
 ## Support
 
