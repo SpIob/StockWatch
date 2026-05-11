@@ -1,0 +1,30 @@
+StockWatch is a multi-user stock watchlist and research app that lets users track stocks they're interested in with live price data and price alerts. The goal is to help investors monitor market movements and get notified when stocks hit target prices — all in a clean, modern fintech-style interface.
+
+Audience & Roles
+
+Multiple independent users, each with their own account. All authenticated users have the same role — they can manage their personal watchlist, set price alerts, and search/explore stocks. No admin role required at launch.
+
+Core Flows
+
+These flows must work end-to-end:
+
+User signs up / logs in → lands on their personal Watchlist dashboard
+
+User searches for a stock by ticker or company name → views key live price data (current price, % change, day high/low, volume)
+
+User adds a stock to their watchlist → stock appears on dashboard with live price and change %
+
+User removes a stock from their watchlist
+
+User sets a price alert on a watchlisted stock (above or below a target price) → alert is stored and visually flagged on the dashboard when the condition is met
+
+User views a stock detail page: live price, price change, key stats, and their active alert for that stock
+
+Technical Requirements
+
+Live stock price data via a public API (e.g. Yahoo Finance via RapidAPI, or Finnhub free tier). Each user's watchlist and alerts stored in the Base44 database, scoped to their user ID. Price alerts are evaluated client-side on each data refresh and flagged visually (no push notifications needed at launch).
+
+Design Preferences
+
+Clean & modern light theme — white/light gray background (#F8FAFC), card-based layout with subtle shadows, crisp sans-serif typography (Inter or equivalent), green/red for price movement, blue accent (#2563EB) for primary actions. Fintech app aesthetic: structured data tables, clear hierarchy, minimal decorative elements. Responsive layout that works on mobile.
+
