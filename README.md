@@ -1,7 +1,3 @@
---- README.md (原始)
-
-
-+++ README.md (修改后)
 # StockWatch
 
 A multi-user stock watchlist and research application that lets users track stocks with live price data and price alerts. Built with React, TypeScript, Vite, and TailwindCSS.
