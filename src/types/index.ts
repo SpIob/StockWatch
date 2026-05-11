@@ -7,6 +7,7 @@ export interface StockQuote {
   o: number; // open price
   pc: number; // previous close
   t: number; // timestamp
+  v: number; // volume
 }
 
 export interface SearchResult {

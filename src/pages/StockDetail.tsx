@@ -188,7 +188,7 @@ export default function StockDetail() {
                   <Activity className="w-4 h-4" />
                   <span className="text-xs font-medium uppercase">Volume</span>
                 </div>
-                <p className="text-lg font-semibold text-gray-900">{quote.t ? formatNumber(quote.t) : 'N/A'}</p>
+                <p className="text-lg font-semibold text-gray-900">{quote.v ? formatNumber(quote.v) : 'N/A'}</p>
               </div>
 
               <div className="p-4 bg-gray-50 rounded-xl">
