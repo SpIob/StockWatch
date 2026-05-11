@@ -1,7 +1,7 @@
 import { StockQuote, SearchResult } from '../types';
 
 const API_KEY = import.meta.env.VITE_FINNHUB_API_KEY || '';
-const BASE_URL = 'https://finnhub.io/api/v1';
+const BASE_URL = import.meta.env.VITE_FINNHUB_BASE_URL || 'https://finnhub.io/api/v1';
 
 export async function getStockQuote(symbol: string): Promise<StockQuote | null> {
   try {
